@@ -1,4 +1,14 @@
-@import "global/fonts.scss";
+@import "font.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "container.scss";
+@import "blocks/page.scss";
 @import "blocks/header.scss";
-@import "global/global.scss";
-@import "blocks/main.scss";
+@import "blocks/menu.scss";
+@import "blocks/contact-form.scss";
+@import "blocks/about.scss";
+@import "blocks/contacts.scss";
+@import "blocks/facts.scss";
+@import "blocks/footer.scss";
+@import "blocks/bicycles-types.scss";
+@import "blocks/videos.scss";

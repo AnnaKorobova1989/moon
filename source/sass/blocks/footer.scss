@@ -1,0 +1,69 @@
+.footer {
+  padding: 5px 0 94px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 0 50px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 0 27px 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 24px;
+      margin: 0 0 20px 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-style: normal;
+    font-size: 17px;
+    line-height: 31px;
+    padding: 0 20.3%;
+    margin-bottom: 40px;
+    color: $black-opacity;
+
+    @media (max-width: $tablet-width) {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 0 8%;
+      margin-bottom: 18px;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $aquamarine;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+}
+
+.footer__container {
+  max-width: 957px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 698px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}

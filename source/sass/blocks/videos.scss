@@ -1,0 +1,121 @@
+.videos {
+  text-align: center;
+  color: $white;
+  background-image: linear-gradient(to bottom, $cursed-black 76.3%, $white 76.3%);
+  padding: 120px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 70px 0;
+    background-image: linear-gradient(to bottom, $cursed-black 72.7%, $white 72.7%);
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 83px 0 70px 0;
+    background-image: linear-gradient(to bottom, $cursed-black 76.4%, $white 76.4%);
+  }
+
+  h2 {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+
+    @media (max-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 321px) {
+      text-align: justify;
+      padding: 0 4%;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    padding: 0 37%;
+    opacity: 0.7;
+    margin-bottom: 56px;
+
+    @media (max-width: $tablet-width) {
+      padding: 0 20%;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 0 4%;
+      margin-bottom: 54px;
+    }
+  }
+}
+
+.videos__container {
+  max-width: 930px;
+  position: relative;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    max-width: 503px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 288px;
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+}
+
+.videos__button {
+  @include button-reset;
+
+  font-family: $main-font;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $aquamarine;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+    transition: transform 0.2s;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.videos__icon {
+  @media (max-width: $tablet-width) {
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 24px;
+    height: 19px;
+    transform: translateX(1px);
+  }
+}
