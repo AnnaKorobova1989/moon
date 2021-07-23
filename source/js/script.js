@@ -51,7 +51,6 @@
   }
 })();
 
-'use strict';
 
 (function () {
   if (document.querySelector('.menu__list')) {
