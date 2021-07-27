@@ -121,6 +121,10 @@
     @media (max-width: $tablet-width) {
       padding: 0;
       margin-right: 0;
+
+      &:nth-child(4n+4) {
+        margin-left: 50px;
+      }
     }
   }
 

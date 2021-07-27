@@ -85,10 +85,23 @@
 
     @media (max-width: $mobile-width) {
       justify-content: center;
+      letter-spacing: -0.01px;
     }
   }
 }
 
 .contacts__list__icon {
   margin-right: 15px;
+}
+
+@media (max-width: $mobile-width) {
+  .contacts__list__icon--email {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contacts__list__icon--phone {
+    margin-left: -12px;
+    margin-right: 12px;
+  }
 }
